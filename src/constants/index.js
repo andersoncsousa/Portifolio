@@ -24,7 +24,8 @@ export const about = {
   name: 'Caique Sousa',
   age: '27 anos',
   country: 'São Paulo/Brasil',
-  profission: 'Desenvolvedor Front-end e Desenvolvedor de jogos'
+  profission: 'Desenvolvedor Front-end e Desenvolvedor de jogos',
+  about:'Sou um desenvolvedor com mais de 8 anos de experiência na área web. Desde que comecei na área, desenvolvo jogos no meu tempo livre e isso sempre foi uma grande paixão. Busco constantemente me atualizar e evoluir profissionalmente, por isso, procuro me envolver em projetos desafiadores que me permitam aprender novas habilidades e adquirir novos conhecimentos. Participar de projetos que me tragam orgulho do resultado final é muito importante, pois isso me estimula a continuar evoluindo em minha carreira como desenvolvedor.',
 }
 
 export const resources = {

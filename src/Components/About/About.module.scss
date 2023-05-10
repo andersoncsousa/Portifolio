@@ -1,41 +1,47 @@
-/* Autor: Cs Tech */
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
 
 .homeSession {
     width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     .boxHome {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
+        gap: 2rem;
         .boxImg {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 0;
             img {
-                width: 100%;
-                max-width: 200px;
-                display: block;
-                margin: 0 auto;
                 border-radius: 40px;
-                margin-top: 30px;
             }
         }
         .boxText {
+            width: 100%;
             text-align: left;
-            padding: 20px;
+            padding: 0px 4rem 0px 0px;
             h2 {
                 font-size: 3.3rem;
                 color: #ffffff;
                 font-weight: bolder;
-                padding-bottom: 10px;
-                line-height: 45px;
             }
-            p {
-                font-size: 20px;
+            div>p>span{
+                font-size: 1.8rem;
+                font-weight: 900;
+            }
+            div>p{
+                font-size: 1.5rem;
                 color: #ffffff;
                 font-weight: 700;
-                line-height: 35px;
             }
         }
     }
@@ -87,15 +93,42 @@
     }
 }
 
+@include device(notebook) {
+    .homeSession{
+        .boxHome{
+            .boxText{
+                h2{
+                    font-size: 2.5rem;
+                }
+                div>p>span{
+                    font-size: 1.4rem;
+                }
+                div>p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
 
-
-@media(max-width: 998.98px) {
+@include device(tablet) {
     .homeSession{
         .boxHome{
             flex-direction: column;
+            align-items: center;
+            .boxImg{
+                justify-content: center;
+            }
+            .boxText{
+                text-align: center;
+                padding: 0px 13px 0px 13px;
+            }
         }
     }
 
+}
+
+@media(max-width: 998.98px) {
 
     .boxSobre {
         flex-direction: column;

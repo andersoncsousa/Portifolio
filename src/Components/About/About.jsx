@@ -4,20 +4,26 @@ import { about } from '@/constants';
 import Image from 'next/image';
 
 const About = () => {
-  const { name, age, country, profission } = about;
+    
   return (
     <section className={styles.homeSession}>
         <div className={styles.boxHome}>
             <div className={styles.boxImg}>
-                <Image src="/caique-sousa2.jpg" alt="Caique Sousa" width={200} height={300}/>
+                <Image 
+                src="/caique-sousa2.jpg" 
+                alt="Caique Sousa" 
+                width={200} 
+                height={300}
+                />
             </div>
             <div className={styles.boxText}>
                 <h2>{about.name}</h2>
-                <p>
-                    Idade: {about.age}.
-                    <br/> Estado: {about.country}.
-                    <br/> Profissão: {about.profission}.
-                </p>
+                <div>
+                    {/* <p><span>Idade:</span> {about.age}.</p> */}
+                    <br/> <p><span>Região: </span> {about.country}.</p>
+                    <br/> <p><span>Profissão: </span> {about.profission}.</p>
+                    <br/> <p><span>Bio: </span>{about.about}</p>
+                </div>
             </div>
         </div>
     </section>
