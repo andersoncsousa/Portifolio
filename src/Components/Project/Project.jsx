@@ -7,26 +7,38 @@ const Project = () => {
 
     const {skills} = project; 
 
-    const motionProps = (initialX, finalX) => ({
-        initial: { opacity: 0, y: initialX },
-        whileInView: { opacity: 1, y: finalX },
-        viewport: { once: true },
-        transition: {
-        type: "spring",
-        bounce: 0.4,
-        durantion: 1,
-        delay: 0.1,
+    const motionProps = {
+        offScreen: {
+            opacity: 0,
+            y: 50,
         },
-    });
+        onScreen: (i = 2) => (
+            {
+                opacity: 1,
+                y: 0,
+                transition: {
+                    type: 'spring',
+                    bounce: 0.4,
+                    durantion:1,
+                    delay:0.2 * i,
+                }
+            }
+        )
+    }
 
-    const skillsList = project.map((skills, i) => (
+    const skillsList = project.map((project, i) => (
         <span key={i} className={styles.barge1}>
-            {/* {i} */}
+            {/* {['project']['skills']} */}
         </span>
     ));
 
     const projectList = project.map((project, i) => (
-        <li key={i} className={styles.card}>
+        <motion.li 
+        variants={motionProps}
+        viewport={{once:true}}
+        initial='offScreen'
+        whileInView='onScreen'
+         key={i} className={styles.card}>
             <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <h4 className={styles.cardText}>{project.description}</h4>
@@ -40,7 +52,7 @@ const Project = () => {
                 <a href={project.url} target="_blank" 
                 className={styles.btnProject}>Veja o projeto</a>
             </div>
-        </li>
+        </motion.li>
     ));
 
     return (
