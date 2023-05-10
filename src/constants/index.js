@@ -32,15 +32,25 @@ export const about = {
 export const project = [
   {
     title: "Template bank",
-    url: "#",
+    url: "https://template-bank-iota.vercel.app/",
     description: "template de banco com transição animada e objetos 3D",
-	skills: [{
-		skills1: "REACT JS",
-		skills2: "NEXT JS",
-		skills3: "JS",
-		skills4: "Frame Motion",
-		skills5: "Three JS",
-	}],
+	skills: [
+		{
+			skill: "REACT JS"
+		},
+		{
+			skill: "NEXT JS"
+		},
+		{
+			skill: "JS"
+		},
+		{
+			skill: "Frame Motion"
+		},
+		{
+			skill: "Three JS"
+		},
+	],
   },
   {
     title: "Rajadu Store",
@@ -48,7 +58,7 @@ export const project = [
     skills2: "CSS",
     skills3: "JS",
     skills4: "LOJA INTEGRADA",
-    url: "#",
+    url: "https://www.rajadu.com.br/",
     description: "Ecommerce de acessórios e moda streetwear",
   },
   {
@@ -57,7 +67,7 @@ export const project = [
     skills2: "REACT JS",
     skills3: "NEXT JS",
     skills4: "SASS",
-    url: "#",
+    url: "https://www.acervob3.com.br/",
     description: "Site de consulta de documentos da B3",
   },
   {
@@ -66,7 +76,7 @@ export const project = [
     skills2: "CSS",
     skills3: "JS",
     skills4: "LOJA INTEGRADA",
-    url: "#",
+    url: "https://www.safitavestuario.com.br/",
     description: "Ecommerce da marca Safita de moda streetwear",
   },
   {
@@ -74,7 +84,15 @@ export const project = [
     skills1: "REACT JS",
     skills2: "NEXT JS",
     skills3: "JS",
-    url: "#",
+    url: "https://landing-page-nextjs-five.vercel.app/home",
+    description: "Landing page de apresentação da empresa",
+  },
+  {
+    title: "Plus Up Landing page",
+    skills1: "REACT JS",
+    skills2: "NEXT JS",
+    skills3: "JS",
+    url: "https://plus-up.vercel.app/",
     description: "Landing page de apresentação da empresa",
   },
   {
@@ -82,7 +100,7 @@ export const project = [
     skills1: "REACT JS",
     skills2: "NEXT JS",
     skills3: "JS",
-    url: "#",
+    url: "https://login-nextjs-steel.vercel.app/login",
     description: "Pagina de login com transição animada",
   },
   {
@@ -90,7 +108,7 @@ export const project = [
     skills1: "REACT JS",
     skills2: "NEXT JS",
     skills3: "JS",
-    url: "#",
+    url: "https://dropbox-clone-cs.netlify.app/",
     description: "Clone layout Dropbox",
   },
   {
@@ -99,7 +117,7 @@ export const project = [
     skills2: "SASS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "http://www.simplesenatural.com.br/",
     description: "Site de loja de produtos naturais",
   },
   {
@@ -108,7 +126,7 @@ export const project = [
     skills2: "CSS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://caiqueira-portifolio.netlify.app/",
     description: "Portifolio de Modelo (Em Construção)",
   },
   {
@@ -116,7 +134,7 @@ export const project = [
     skills1: "VUE JS",
     skills2: "CSS",
     skills3: "JS",
-    url: "#",
+    url: "https://qr-code-cs-tech.netlify.app/",
     description: "Site Gerador de QR Code",
   },
   {
@@ -125,7 +143,7 @@ export const project = [
     skills2: "CSS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://jantar-unilever-hellmanns.netlify.app/unilever",
     description: "Jantar Unilever Hellmanns 2020 Digital, evento gastronômico",
   },
   {
@@ -134,7 +152,7 @@ export const project = [
     skills2: "SASS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://brasa-na-mesa-digital-2021.netlify.app/",
     description: "Brasa na Mesa Digital 2021, evento gastronômico",
   },
   {
@@ -143,7 +161,7 @@ export const project = [
     skills2: "SASS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://cozinha-de-imigrantes-cs.netlify.app/",
     description: "Site do livro Cozinha de Imigrantes",
   },
   {
@@ -152,7 +170,7 @@ export const project = [
     skills2: "CSS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://clone-pinterest-cs-tech.netlify.app/",
     description: "Clone layout Pinterest",
   },
   {
@@ -161,7 +179,7 @@ export const project = [
     skills2: "SASS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://mesa-rio-2020-cs.netlify.app/",
     description: "Mesa Rio Digital 2020, evento gastronômico",
   },
   {
@@ -170,7 +188,7 @@ export const project = [
     skills2: "SASS",
     skills3: "JS",
     skills4: "Webpack",
-    url: "#",
+    url: "https://mesa-regeneracao-2020.netlify.app/",
     description: "Mesa Regeneração 2020, evento gastronômico",
   },
   {
@@ -178,7 +196,7 @@ export const project = [
     skills1: "HTML",
     skills2: "SASS",
     skills3: "Google Site",
-    url: "#",
+    url: "https://www.fazendamangalo.com.br/",
     description: "Site da Fazenda Mangalo",
   },
 ];

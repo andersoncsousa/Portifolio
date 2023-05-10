@@ -27,6 +27,7 @@
     }
 
     .card{
+        height: 200px;
         padding: 13px;
         background-color: $lightBlack;
         border-radius: 20px;
@@ -45,7 +46,7 @@
                 font-size: 1.4rem;
                 font-weight: 500;
                 color: $white;
-                text-align: left;
+                text-align: center;
                 padding: 10px 0px 10px 0px;  
             }
 
@@ -94,6 +95,7 @@
         .project{
             .content{
                 ul{
+                    margin: 0 auto;
                      grid-template-columns: repeat(2, 1fr);
                 }
             }
@@ -103,7 +105,8 @@
     @include device(tablet) {
         .content{
             ul{
-                 grid-template-columns: repeat(2, 1fr);
+                margin: 0 auto;
+                 grid-template-columns: repeat(1, 1fr);
             }
         }
     }
@@ -111,6 +114,7 @@
     @include device(mobile) {
         .content{
             ul{
+                margin: 0 auto;
                  grid-template-columns: repeat(1, 1fr);
             }
         }
