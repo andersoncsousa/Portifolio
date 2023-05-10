@@ -2,17 +2,22 @@ import { ana, carlos, joao, maria } from "@/assets";
 import {
   AiOutlineHeart,
   AiOutlineInstagram,
+  AiOutlineWhatsApp,
   AiOutlineLock,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
-import { SlSocialLinkedin, SlSocialTwitter } from "react-icons/sl";
+import { SlSocialLinkedin, SlSocialTwitter, SlSocialGithub } from "react-icons/sl";
 
 const heart = <AiOutlineHeart />,
   locker = <AiOutlineLock />,
   computer = <MdComputer />,
   instagram = <AiOutlineInstagram />,
   linkedin = <SlSocialLinkedin />,
-  twitter = <SlSocialTwitter />;
+  twitter = <SlSocialTwitter />,
+  github = <SlSocialGithub />,
+  whatsapp = <AiOutlineWhatsApp />,
+  email = <AiOutlineMail />;
 
 export const navLinks = [
   { name: "Sobre", url: "#about" },
@@ -277,8 +282,10 @@ export const footer = {
   ],
   copy: " © Copyright CS Tech - Todos os direitos reservados - Desenvolvido por: CS Tech",
   social: [
-    { component: instagram, url: "#" },
-    { component: twitter, url: "#" },
-    { component: linkedin, url: "#" },
+	  { name:'Linkedin', component: linkedin, url: "https://www.linkedin.com/in/caique-sousa-444776148/" },
+	  { name:'Github', component: github, url: "https://github.com/andersoncsousa" },
+	  { name:'Whatsapp', component: whatsapp, url: "https://wa.me/5511989770287" },
+	  { name:'Instagram', component: instagram, url: "https://www.instagram.com/caiqueira/" },
+	  { name:'Email', component: email, url: "mailto:caique_sousa@outlook.com.br" },
   ],
 };

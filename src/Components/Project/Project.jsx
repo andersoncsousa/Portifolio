@@ -38,7 +38,8 @@ const Project = () => {
         viewport={{once:true}}
         initial='offScreen'
         whileInView='onScreen'
-         key={i} className={styles.card}>
+        key={i} 
+        className={styles.card}>
             <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <h4 className={styles.cardText}>{project.description}</h4>

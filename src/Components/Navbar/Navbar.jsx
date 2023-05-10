@@ -3,7 +3,7 @@ import styles from "./Navbar.module.scss";
 import Image from "next/image";
 import { navLinks } from "@/constants";
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenuUnfold, AiOutlineMenu, AiOutlineMenuFold } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
       <nav>
         <ul className={styles.links}>{renderLinks}</ul>
-        <AiOutlineMenuUnfold onClick={toggleIsMobile} className={styles.menu} />
+        <AiOutlineMenu onClick={toggleIsMobile} className={styles.menu} />
         <motion.ul
           variants={listMotionProps}
           animate={isMobile ? "open" : "closed"}
