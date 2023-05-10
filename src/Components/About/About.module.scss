@@ -1,0 +1,112 @@
+/* Autor: Cs Tech */
+
+.homeSession {
+    width: 100%;
+    .boxHome {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        .boxImg {
+            img {
+                width: 100%;
+                max-width: 200px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 40px;
+                margin-top: 30px;
+            }
+        }
+        .boxText {
+            text-align: left;
+            padding: 20px;
+            h2 {
+                font-size: 3.3rem;
+                color: #ffffff;
+                font-weight: bolder;
+                padding-bottom: 10px;
+                line-height: 45px;
+            }
+            p {
+                font-size: 20px;
+                color: #ffffff;
+                font-weight: 700;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+.title-section {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.card{
+    height: 100%;
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            text-align: center;
+            padding: 10px;
+        }
+        h4 {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        h5 {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            span {
+                text-transform: uppercase;
+            }
+        }
+        .btn-projetos {
+            align-items: center;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #000000;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 998.98px) {
+    .homeSession{
+        .boxHome{
+            flex-direction: column;
+        }
+    }
+
+
+    .boxSobre {
+        flex-direction: column;
+        .boxText {
+            margin-top: 40px;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    .title-section {
+        font-size: 1.3rem;
+    }
+}
