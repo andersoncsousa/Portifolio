@@ -17,7 +17,7 @@ const About = () => {
   });
 
   return (
-    <section className={styles.homeSession}>
+    <section id='about' className={styles.homeSession}>
       <div className={styles.boxHome}>
         <motion.div {...motionProps(-100, 0)} className={styles.boxImg}>
           <Image

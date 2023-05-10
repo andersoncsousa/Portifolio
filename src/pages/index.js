@@ -1,6 +1,7 @@
 import About from '@/Components/About/About';
 import Footer from '@/Components/Footer/Footer';
 import Navbar from '@/Components/Navbar/Navbar';
+import Project from '@/Components/Project/Project';
 import Head from 'next/head';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <About />
+        <Project />
       </main>
       <Footer />
     </>
