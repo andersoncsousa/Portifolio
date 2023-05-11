@@ -7,7 +7,11 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
-import { SlSocialLinkedin, SlSocialTwitter, SlSocialGithub } from "react-icons/sl";
+import {
+  SlSocialLinkedin,
+  SlSocialTwitter,
+  SlSocialGithub,
+} from "react-icons/sl";
 
 const heart = <AiOutlineHeart />,
   locker = <AiOutlineLock />,
@@ -31,31 +35,76 @@ export const about = {
   country: "São Paulo/Brasil",
   profission: "Desenvolvedor Front-end e Desenvolvedor de jogos",
   about:
-    "Sou um desenvolvedor com mais de 8 anos de experiência na área web. Desde que comecei na área, desenvolvo jogos no meu tempo livre e isso sempre foi uma grande paixão. Busco constantemente me atualizar e evoluir profissionalmente, por isso, procuro me envolver em projetos desafiadores que me permitam aprender novas habilidades e adquirir novos conhecimentos. Participar de projetos que me tragam orgulho do resultado final é muito importante, pois isso me estimula a continuar evoluindo em minha carreira como desenvolvedor.",
+    "Sou um desenvolvedor com mais de 7 anos de experiência na área web. Desde que comecei na área, desenvolvo jogos no meu tempo livre e isso sempre foi uma grande paixão. Busco constantemente me atualizar e evoluir profissionalmente, por isso, procuro me envolver em projetos desafiadores que me permitam aprender novas habilidades e adquirir novos conhecimentos. Participar de projetos que me tragam orgulho do resultado final é muito importante, pois isso me estimula a continuar evoluindo em minha carreira como desenvolvedor.",
 };
+
+export const projectLista = [
+	{
+	title: "Template bank",
+	url: "https://template-bank-iota.vercel.app/",
+	description: "template de banco com transição animada e objetos 3D",
+	skills:[{skill: "REACT JS"}, {skill2: "NEXT JS"}, {skill3: "JS"}],
+	},
+	{
+	title: "Template bank2",
+	url: "https://template-bank-iota.vercel.app/",
+	description: "template de banco com transição animada e objetos 3D",
+	skills: [
+		
+		{skill: "REACT JS"},
+		{skill2: "NEXT JS"},
+		{skill3: "JS"},
+		
+	],
+	},
+	{
+	title: "Template bank3",
+	url: "https://template-bank-iota.vercel.app/",
+	description: "template de banco com transição animada e objetos 3D",
+	skills: [
+		
+		{skill: "REACT JS"},
+		{skill2: "NEXT JS"},
+		{skill3: "JS"},
+		
+	],
+	},
+	{
+	title: "Template bank4",
+	url: "https://template-bank-iota.vercel.app/",
+	description: "template de banco com transição animada e objetos 3D",
+	skills: [
+		
+		{skill: "REACT JS"},
+		{skill2: "NEXT JS"},
+		{skill3: "JS"},
+		
+	],
+	},
+];
 
 export const project = [
   {
     title: "Template bank",
     url: "https://template-bank-iota.vercel.app/",
     description: "template de banco com transição animada e objetos 3D",
-	skills: [
-		{
-			skill: "REACT JS"
-		},
-		{
-			skill: "NEXT JS"
-		},
-		{
-			skill: "JS"
-		},
-		{
-			skill: "Frame Motion"
-		},
-		{
-			skill: "Three JS"
-		},
-	],
+    skills: [
+      {
+        skill: "REACT JS",
+      },
+      {
+        skill: "NEXT JS",
+      },
+      {
+        skill: "JS",
+      },
+      {
+        skill: "Frame Motion",
+      },
+      {
+        skill: "Three JS",
+      },
+    ],
   },
   {
     title: "Rajadu Store",
@@ -282,10 +331,30 @@ export const footer = {
   ],
   copy: " © Copyright CS Tech - Todos os direitos reservados - Desenvolvido por: CS Tech",
   social: [
-	  { name:'Linkedin', component: linkedin, url: "https://www.linkedin.com/in/caique-sousa-444776148/" },
-	  { name:'Github', component: github, url: "https://github.com/andersoncsousa" },
-	  { name:'Whatsapp', component: whatsapp, url: "https://wa.me/5511989770287" },
-	  { name:'Instagram', component: instagram, url: "https://www.instagram.com/caiqueira/" },
-	  { name:'Email', component: email, url: "mailto:caique_sousa@outlook.com.br" },
+    {
+      name: "Linkedin",
+      component: linkedin,
+      url: "https://www.linkedin.com/in/caique-sousa-444776148/",
+    },
+    {
+      name: "Github",
+      component: github,
+      url: "https://github.com/andersoncsousa",
+    },
+    {
+      name: "Whatsapp",
+      component: whatsapp,
+      url: "https://wa.me/5511989770287",
+    },
+    {
+      name: "Instagram",
+      component: instagram,
+      url: "https://www.instagram.com/caiqueira/",
+    },
+    {
+      name: "Email",
+      component: email,
+      url: "mailto:caique_sousa@outlook.com.br",
+    },
   ],
 };

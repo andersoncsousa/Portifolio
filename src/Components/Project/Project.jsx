@@ -1,11 +1,11 @@
 import styles from "./Project.module.scss";
-import { project, skill } from "@/constants";
+import { project } from "@/constants";
+import { projectLista } from "@/constants";
 import Image from "next/image";
 import { motion } from 'framer-motion';
 
 const Project = () => {
-
-    const {skills} = project; 
+    const {skills} = projectLista; 
 
     const motionProps = {
         offScreen: {
@@ -26,9 +26,9 @@ const Project = () => {
         )
     }
 
-    const skillsList = project.map((project, i) => (
+    const skillsList = projectLista.map((skills, i) => (
         <span key={i} className={styles.barge1}>
-            {/* {['project']['skills']} */}
+            {projectLista[i].skills.skill}
         </span>
     ));
 
@@ -44,12 +44,12 @@ const Project = () => {
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <h4 className={styles.cardText}>{project.description}</h4>
 
-                {/* <div className={styles.cardBoxSkill}>
-                    <h5>Skills usadas no projeto:</h5>
-                        <span key={i} className={styles.barge1}>
+                <h5>Skills usadas no projeto:</h5>
+                <ul className={styles.cardBoxSkill}>
+                        <li className={styles.barge1}>
                             {skillsList}
-                        </span>
-                </div> */}
+                        </li>
+                </ul>
                 <a href={project.url} target="_blank" 
                 className={styles.btnProject}>Veja o projeto</a>
             </div>

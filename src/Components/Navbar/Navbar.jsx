@@ -2,12 +2,19 @@ import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import Image from "next/image";
 import { navLinks } from "@/constants";
+import { footer } from "@/constants";
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenuUnfold, AiOutlineMenu, AiOutlineMenuFold } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMenuUnfold,
+  AiOutlineMenu,
+  AiOutlineMenuFold,
+} from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const {social } = footer;
 
   const listMotionProps = {
     open: { opacity: 1, x: 0 },
@@ -19,11 +26,15 @@ const Navbar = () => {
     closed: { opacity: 0, x: 50 },
   };
 
+  
+
   const renderLinks = navLinks.map((link, i) => (
     <motion.li variants={itemMotionProps} key={i}>
       <a href={link.url}>{link.name}</a>
     </motion.li>
   ));
+
+  
 
   const toggleIsMobile = () => setIsMobile((prevState) => !prevState);
 
@@ -54,7 +65,7 @@ const Navbar = () => {
           className={styles["mobile-links"]}
         >
           <AiOutlineClose onClick={toggleIsMobile} />
-          {renderLinks}
+          {renderLinks} 
         </motion.ul>
       </nav>
     </section>
