@@ -38,55 +38,39 @@ export const about = {
     "Sou um desenvolvedor com mais de 7 anos de experiência na área web. Desde que comecei na área, desenvolvo jogos no meu tempo livre e isso sempre foi uma grande paixão. Busco constantemente me atualizar e evoluir profissionalmente, por isso, procuro me envolver em projetos desafiadores que me permitam aprender novas habilidades e adquirir novos conhecimentos. Participar de projetos que me tragam orgulho do resultado final é muito importante, pois isso me estimula a continuar evoluindo em minha carreira como desenvolvedor.",
 };
 
-export const habilits = [
-	{ name: "REACT JS", url: "#about" },
-	{ name: "NEXT JS", url: "#project" },
-	{ name: "JS", url: "#contact" },
-	];
-
 export const projectLista = [
-	{
-	title: "Template bank",
-	url: "https://template-bank-iota.vercel.app/",
-	description: "template de banco com transição animada e objetos 3D",
-	habilits : [
-		{ name: "REACT JS" },
-		{ name: "NEXT JS"},
-		{ name: "JS"},
-		],
-	},
-	{
-	title: "Template bank2",
-	url: "https://template-bank-iota.vercel.app/",
-	description: "template de banco com transição animada e objetos 3D",
-	habilits : [
-		{ name: "REACT JS", url: "#about" },
-		{ name: "NEXT JS", url: "#project" },
-		{ name: "JS", url: "#contact" },
-		],
-	},
-	{
-	title: "Template bank3",
-	url: "https://template-bank-iota.vercel.app/",
-	description: "template de banco com transição animada e objetos 3D",
-	habilits : [
-		{ name: "REACT JS", url: "#about" },
-		{ name: "NEXT JS", url: "#project" },
-		{ name: "JS", url: "#contact" },
-		],
-	},
-	{
-	title: "Template bank4",
-	url: "https://template-bank-iota.vercel.app/",
-	description: "template de banco com transição animada e objetos 3D",
-	skills: [
-		
-		{skill: "REACT JS"},
-		{skill2: "NEXT JS"},
-		{skill3: "JS"},
-		
-	],
-	},
+  {
+    title: "Template bank",
+    url: "https://template-bank-iota.vercel.app/",
+    description: "template de banco com transição animada e objetos 3D",
+    skills: "REACT JS • NEXT JS • SASS • JS",
+  },
+  {
+    title: "Template bank2",
+    url: "https://template-bank-iota.vercel.app/",
+    description: "template de banco com transição animada e objetos 3D",
+    habilits: [
+      { name: "REACT JS", url: "#about" },
+      { name: "NEXT JS", url: "#project" },
+      { name: "JS", url: "#contact" },
+    ],
+  },
+  {
+    title: "Template bank3",
+    url: "https://template-bank-iota.vercel.app/",
+    description: "template de banco com transição animada e objetos 3D",
+    habilits: [
+      { name: "REACT JS", url: "#about" },
+      { name: "NEXT JS", url: "#project" },
+      { name: "JS", url: "#contact" },
+    ],
+  },
+  {
+    title: "Template bank4",
+    url: "https://template-bank-iota.vercel.app/",
+    description: "template de banco com transição animada e objetos 3D",
+    skills: [{ skill: "REACT JS" }, { skill2: "NEXT JS" }, { skill3: "JS" }],
+  },
 ];
 
 export const project = [
@@ -94,74 +78,60 @@ export const project = [
     title: "Template bank",
     url: "https://template-bank-iota.vercel.app/",
     description: "template de banco com transição animada e objetos 3D",
-    skills: [
-      {
-        skill: "REACT JS",
-      },
-      {
-        skill: "NEXT JS",
-      },
-      {
-        skill: "JS",
-      },
-      {
-        skill: "Frame Motion",
-      },
-      {
-        skill: "Three JS",
-      },
-    ],
+    skills: "React Js • Next Js • Sass • Js • Frame Motion • Three Js",
+    // skills: [
+    //   {
+    //     skill: "REACT JS",
+    //   },
+    //   {
+    //     skill: "NEXT JS",
+    //   },
+    //   {
+    //     skill: "JS",
+    //   },
+    //   {
+    //     skill: "Frame Motion",
+    //   },
+    //   {
+    //     skill: "Three JS",
+    //   },
+    // ],
   },
   {
     title: "Rajadu Store",
-    skills1: "HTML",
-    skills2: "CSS",
-    skills3: "JS",
-    skills4: "LOJA INTEGRADA",
     url: "https://www.rajadu.com.br/",
     description: "Ecommerce de acessórios e moda streetwear",
+	skills : "Html • Js • Css • Loja Integrada",
   },
   {
     title: "B3",
-    skills1: "JS",
-    skills2: "REACT JS",
-    skills3: "NEXT JS",
-    skills4: "SASS",
     url: "https://www.acervob3.com.br/",
     description: "Site de consulta de documentos da B3",
+	skills : "React Js • Next Js • Sass • Js",
   },
   {
     title: "Safita Store",
-    skills1: "HTML",
-    skills2: "CSS",
-    skills3: "JS",
-    skills4: "LOJA INTEGRADA",
     url: "https://www.safitavestuario.com.br/",
     description: "Ecommerce da marca Safita de moda streetwear",
+	skills : "Html • Js • Css • Loja Integrada",
   },
   {
     title: "Funnelever Landing page",
-    skills1: "REACT JS",
-    skills2: "NEXT JS",
-    skills3: "JS",
     url: "https://landing-page-nextjs-five.vercel.app/home",
     description: "Landing page de apresentação da empresa",
+	skills : "React Js • Next Js • Sass • Js",
   },
   {
     title: "Plus Up Landing page",
-    skills1: "REACT JS",
-    skills2: "NEXT JS",
-    skills3: "JS",
     url: "https://plus-up.vercel.app/",
     description: "Landing page de apresentação da empresa",
+	skills : "React Js • Next Js • Sass • Js",
   },
   {
     title: "Login Page",
-    skills1: "REACT JS",
-    skills2: "NEXT JS",
-    skills3: "JS",
     url: "https://login-nextjs-steel.vercel.app/login",
     description: "Pagina de login com transição animada",
+	skills : "React Js • Next Js • Sass • Js",
   },
   {
     title: "Clone Dropbox",
@@ -170,94 +140,67 @@ export const project = [
     skills3: "JS",
     url: "https://dropbox-clone-cs.netlify.app/",
     description: "Clone layout Dropbox",
+	skills : "React Js • Next Js • Sass • Js",
   },
   {
     title: "Simples & Natural",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "http://www.simplesenatural.com.br/",
     description: "Site de loja de produtos naturais",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Portifolio de Moda",
-    skills1: "HTML",
-    skills2: "CSS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://caiqueira-portifolio.netlify.app/",
     description: "Portifolio de Modelo (Em Construção)",
+	skills : "Html • Js • Css • Webpack",
   },
   {
     title: "Gerador de QR Code",
-    skills1: "VUE JS",
-    skills2: "CSS",
-    skills3: "JS",
     url: "https://qr-code-cs-tech.netlify.app/",
     description: "Site Gerador de QR Code",
+	skills : "Vue Js • Css • Js",
   },
   {
     title: "Jantar Unilever Hellmanns",
-    skills1: "HTML",
-    skills2: "CSS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://jantar-unilever-hellmanns.netlify.app/unilever",
     description: "Jantar Unilever Hellmanns 2020 Digital, evento gastronômico",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Brasa na Mesa",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://brasa-na-mesa-digital-2021.netlify.app/",
     description: "Brasa na Mesa Digital 2021, evento gastronômico",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Cozinha de Migrantes",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://cozinha-de-imigrantes-cs.netlify.app/",
     description: "Site do livro Cozinha de Imigrantes",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Clone Pinterest",
-    skills1: "HTML",
-    skills2: "CSS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://clone-pinterest-cs-tech.netlify.app/",
     description: "Clone layout Pinterest",
+	skills : "Html • Js • Css • Webpack",
   },
   {
     title: "Mesa Rio",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://mesa-rio-2020-cs.netlify.app/",
     description: "Mesa Rio Digital 2020, evento gastronômico",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Mesa Regeneração",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "JS",
-    skills4: "Webpack",
     url: "https://mesa-regeneracao-2020.netlify.app/",
     description: "Mesa Regeneração 2020, evento gastronômico",
+	skills : "Html • Js • Sass • Webpack",
   },
   {
     title: "Fazenda Mangalo",
-    skills1: "HTML",
-    skills2: "SASS",
-    skills3: "Google Site",
     url: "https://www.fazendamangalo.com.br/",
     description: "Site da Fazenda Mangalo",
+	skills : "Html • Google Site • Sass",
   },
 ];
 

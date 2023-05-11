@@ -51,8 +51,14 @@ const Project = () => {
                             {skillsList}
                         </li>
                 </ul> */}
-                <a href={project.url} target="_blank" 
-                className={styles.btnProject}>Veja o projeto</a>
+                <div className={styles.cardBoxSkill}>
+                    <h5>Skills usadas no projeto:</h5>
+                    {project.skills}
+                </div>
+                <a href={project.url} 
+                target="_blank" 
+                className={styles.btnProject} 
+                title={[`Veja o projeto`, `${project.title}`]}>Veja o projeto</a>
             </div>
         </motion.li>
     ));

@@ -68,6 +68,33 @@ p,
   }
 }
 
+.btnUpTopo {
+  width: 100%;
+  max-width: 55px;
+  color: #ffffff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 3px;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  bottom: 0;
+  z-index: 2;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  &:hover {
+      color: $lightBlack;
+      background-color: #ffffff;
+  }
+
+  @include device(tablet) {
+    right: 5px;
+  }
+}
+
 .title {
   @include gradient-color;
   display: inline-block;

@@ -27,7 +27,7 @@
     }
 
     .card{
-        height: 250px;
+        height: 280px;
         padding: 13px;
         background-color: $lightBlack;
         border-radius: 20px;
@@ -40,7 +40,7 @@
             flex-direction: column;
             justify-content: space-between;
             .cardTitle{
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: 700;
                 color: $white;
                 text-align: center;
@@ -50,17 +50,18 @@
                 font-size: 1.4rem;
                 font-weight: 500;
                 color: $white;
-                text-align: center;
-                padding: 10px 0px 10px 0px;  
+                text-align: left;
+                padding: 10px 10px;  
             }
 
             .cardBoxSkill{
+                padding: 5px 10px;  
                 h5{
                     font-size: 1.4rem;
                     font-weight: 500;
                     color: $white;
                     text-align: left;
-                    padding: 10px 0px 10px 0px;  
+                    padding-bottom: 10px;
                 }
                 span{
                     background-color: rgb(237, 84, 130);
@@ -71,8 +72,6 @@
                     margin: 4px 4px 4px 4px ;
                     border-radius: 50px;  
                 }
-                div{
-                }
             }
 
             .btnProject{
@@ -81,6 +80,7 @@
                 font-size: 1.8rem;
                 color: #ffffff;
                 background-color: #000000;
+                border: 1px solid #646464;
                 font-weight: 700;
                 text-align: center;
                 text-transform: uppercase;

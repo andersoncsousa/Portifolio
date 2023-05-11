@@ -1,4 +1,5 @@
 import About from '@/Components/About/About';
+import BtnBack from '@/Components/BtnBack/BtnBack';
 import Contact from '@/Components/Contact/Contact';
 import Footer from '@/Components/Footer/Footer';
 import Navbar from '@/Components/Navbar/Navbar';
@@ -13,6 +14,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <Navbar />
+      <BtnBack />
       <main>
         <About />
         <Project />
