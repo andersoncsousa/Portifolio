@@ -40,19 +40,11 @@ const About = () => {
   }
 
   const renderSocial = social.map((social, i) => (
-    <motion.li key={i}
-    variants={motionProps2}
-    viewport={{once:true}}
-    initial='offScreen'
-    whileInView='onScreen'
-    custom={i}
-    >
-      <Link className={styles.link} href={social.url} target="_blank" title={social.name}>
+      <Link key={i} className={styles.link} href={social.url} target="_blank" title={social.name}>
         <i>
           {social.component}
         </i>
       </Link>
-    </motion.li>
   ));
 
   return (
