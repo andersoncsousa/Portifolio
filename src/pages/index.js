@@ -12,6 +12,7 @@ export default function Home() {
       <Head>
         <title>CS Tech</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel="icon" type="image/png" sizes="16x16"  href="cs-favicon.ico" />
       </Head>
       <Navbar />
       <BtnBack />
