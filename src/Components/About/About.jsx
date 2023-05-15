@@ -41,9 +41,13 @@ const About = () => {
 
   const renderSocial = social.map((social, i) => (
       <Link key={i} className={styles.link} href={social.url} target="_blank" title={social.name}>
-        <i>
+        <motion.i variants={motionProps2}
+        viewport={{once:true}}
+        initial='offScreen'
+        whileInView='onScreen'
+        custom={i}>
           {social.component}
-        </i>
+        </motion.i>
       </Link>
   ));
 
@@ -59,7 +63,13 @@ const About = () => {
           />
         </motion.div>
         <motion.div {...motionProps(100, 0)} className={styles.boxText}>
-          <h2>{about.name}</h2>
+          <motion.h2
+          variants={motionProps2}
+          viewport={{once:true}}
+          initial='offScreen'
+          whileInView='onScreen'
+          >{about.name}
+          </motion.h2>
           <ul>
             <li className={styles.boxSocial}>
               {renderSocial}

@@ -17,6 +17,10 @@
       padding: 1rem;
     }
 
+    a:hover{
+      color: $lightBlack;
+    }
+
     @include device(tablet) {
       display: none;
     }
